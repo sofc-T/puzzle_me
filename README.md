@@ -1,4 +1,4 @@
-# Vinom  
+# Puzzle me  
 
 Terminal client for Vinom game.
 
