@@ -1,8 +1,6 @@
-<<<<<<< HEAD
+
 # Puzzle me  
-=======
-# puzzle  
->>>>>>> d46c8da (docker)
+
 
 Terminal client for puzzle game.
 
