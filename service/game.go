@@ -3,8 +3,8 @@ package service
 import (
 	"sync"
 
-	"github.com/beka-birhanu/vinom-client/service/i"
 	"github.com/google/uuid"
+	"github.com/sofc-t/puzzle-client/service/i"
 )
 
 const (

@@ -1,4 +1,4 @@
-module github.com/beka-birhanu/vinom-client
+module github.com/sofc-t/puzzle-client
 
 go 1.23.4
 

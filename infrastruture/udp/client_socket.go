@@ -8,7 +8,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/beka-birhanu/vinom-client/service/i"
+	"github.com/sofc-t/puzzle-client/service/i"
 )
 
 type ClientOption func(*ClientSocketManager)

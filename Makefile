@@ -1,6 +1,6 @@
 # Build the binary
 build:
-	@go build -o ./bin/vinomclient ./main.go
+	@go build -o ./bin/puzzleclient ./main.go
 
 # Run tests
 test:
@@ -8,4 +8,4 @@ test:
 
 # Run the application
 run: build
-	@./bin/vinomclient
+	@./bin/puzzleclient

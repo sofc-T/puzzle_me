@@ -1,9 +1,9 @@
 package controller
 
 import (
-	"github.com/beka-birhanu/vinom-client/service/i"
 	"github.com/google/uuid"
 	"github.com/rivo/tview"
+	"github.com/sofc-t/puzzle-client/service/i"
 )
 
 type matchHandler func([]byte, string)

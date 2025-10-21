@@ -1,9 +1,9 @@
 package controller
 
 import (
-	"github.com/beka-birhanu/vinom-client/dmn"
-	"github.com/beka-birhanu/vinom-client/service/i"
 	"github.com/rivo/tview"
+	"github.com/sofc-t/puzzle-client/dmn"
+	"github.com/sofc-t/puzzle-client/service/i"
 )
 
 type loginResponseHandler func(*dmn.Player, string)

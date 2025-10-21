@@ -1,6 +1,6 @@
 package gamepb
 
-import "github.com/beka-birhanu/vinom-client/service/i"
+import "github.com/sofc-t/puzzle-client/service/i"
 
 var _ i.Maze = &Maze{}
 var _ i.GameState = &GameState{}

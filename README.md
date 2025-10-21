@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 # Puzzle me  
+=======
+# puzzle  
+>>>>>>> d46c8da (docker)
 
-Terminal client for Vinom game.
+Terminal client for puzzle game.
 
 
 Note: Dancing is key.

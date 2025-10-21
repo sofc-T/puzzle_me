@@ -3,7 +3,7 @@ package udppb
 import (
 	"errors"
 
-	"github.com/beka-birhanu/vinom-client/service/i"
+	"github.com/sofc-t/puzzle-client/service/i"
 	"google.golang.org/protobuf/proto"
 )
 

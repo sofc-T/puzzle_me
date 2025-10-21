@@ -1,6 +1,6 @@
 package i
 
-import "github.com/beka-birhanu/vinom-client/dmn"
+import "github.com/sofc-t/puzzle-client/dmn"
 
 type AuthServer interface {
 	Login(username string, password string) (*dmn.Player, string, error)

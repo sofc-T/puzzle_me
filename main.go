@@ -2,19 +2,20 @@ package main
 
 import (
 	"crypto/rsa"
+	"fmt"
 	"net"
 	"time"
 
-	"github.com/beka-birhanu/vinom-client/config"
-	"github.com/beka-birhanu/vinom-client/controller"
-	"github.com/beka-birhanu/vinom-client/dmn"
-	"github.com/beka-birhanu/vinom-client/infrastruture/crypto"
-	"github.com/beka-birhanu/vinom-client/infrastruture/http"
-	gamepb "github.com/beka-birhanu/vinom-client/infrastruture/pb_encoder/game"
-	udppb "github.com/beka-birhanu/vinom-client/infrastruture/pb_encoder/udp"
-	"github.com/beka-birhanu/vinom-client/infrastruture/udp"
-	"github.com/beka-birhanu/vinom-client/service"
 	"github.com/rivo/tview"
+	"github.com/sofc-t/puzzle-client/config"
+	"github.com/sofc-t/puzzle-client/controller"
+	"github.com/sofc-t/puzzle-client/dmn"
+	"github.com/sofc-t/puzzle-client/infrastruture/crypto"
+	"github.com/sofc-t/puzzle-client/infrastruture/http"
+	gamepb "github.com/sofc-t/puzzle-client/infrastruture/pb_encoder/game"
+	udppb "github.com/sofc-t/puzzle-client/infrastruture/pb_encoder/udp"
+	"github.com/sofc-t/puzzle-client/infrastruture/udp"
+	"github.com/sofc-t/puzzle-client/service"
 )
 
 var player *dmn.Player
@@ -26,7 +27,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	matchService, err := service.NewMatchMaking(service.MatchMakingConfig{
+	matchService, _ := service.NewMatchMaking(service.MatchMakingConfig{
 		HttpClient: httpClient,
 		MatchUri:   config.Envs.MatchUri,
 	})
@@ -45,11 +46,14 @@ func main() {
 		}
 	})
 	if err != nil {
+		fmt.Println(err)
 		panic(err)
+
 	}
 
 	err = authPage.Start(app)
 	if err != nil {
+		fmt.Println(err)
 		panic(err)
 	}
 }

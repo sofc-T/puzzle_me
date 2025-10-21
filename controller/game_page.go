@@ -5,10 +5,10 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/beka-birhanu/vinom-client/service/i"
 	"github.com/gdamore/tcell/v2"
 	"github.com/google/uuid"
 	"github.com/rivo/tview"
+	"github.com/sofc-t/puzzle-client/service/i"
 )
 
 // directions maps movement directions (North, South, East, West) to row and column deltas.
